@@ -1,0 +1,82 @@
+================================================================================
+AI PRACTICAL EXAMINATION - PROMPT LOG (Set A)
+Course: Artificial Intelligence: Concepts and Applications (P) - 250021509
+Student Name: Juned Chauhan
+Enrolment No: 25004500210146
+Variant Digit (d): 6 (last digit of 25004500210146)
+Exam Date: 2026-10-27
+================================================================================
+
+[2026-10-27 10:52:14] PROMPT 1:
+"I am taking the AI Practical Exam Set A. My Enrolment Number is 25004500210146, so my variant digit d is 6. Help me write the first cell of my notebook declaring these variables and verifying the start and goal nodes from the variant table."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 10:55:30] PROMPT 2:
+"Write Python code for Q1 Unit I Gate Triage Agent. Implement triage(purpose, hour, is_student, has_appointment, emergency) according to the 7 ordered rules. Test with the 5 given cases and create a 6th case testing conflict between rules."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:01:12] PROMPT 3:
+"Write code for Q1(b): calculate mean, population variance, sample variance, P(wait > 10) for admin waiting times [4, 9, 15, 6, 22, 9, 11, 3, 9, 18, 7, 13, 13th value = d + 5] using plain loops and verify with the statistics module. State the expected count of the next 5 visitors waiting > 10 min."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:06:45] PROMPT 4:
+"For Q2 Unit II Campus Route Search, build the adjacency list and matrix from the given 11 edges. Write the neighbours(node) function."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:10:20] PROMPT 5 (RULE-BREAK CORRECTION 1):
+"AI, your initial neighbours() function sorted neighbours in standard alphabetical order (A before B). That directly violates the mandatory rule in the exam paper! 
+The paper explicitly states:
+'Neighbour Expansion Rule (mandatory everywhere): Expand neighbours in descending order of degree. Break ties in reverse alphabetical order (e.g. S before P).'
+Fix the neighbours() function to strictly sort neighbours by descending order of their graph degree, breaking any ties in reverse alphabetical order (Z to A)."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:15:40] PROMPT 6 (RULE-BREAK CORRECTION 2):
+"AI, your BFS function checked if a neighbor equals the goal at the time it was generated/enqueued, reporting an expansion count of 4. The paper explicitly warns:
+'Expansion count: count a node each time it is taken up for processing (popped from the queue, or entered in a recursive call), including the goal. In BFS, test for the goal when the node is popped.'
+Fix the BFS algorithm to test for the goal ONLY when the node is popped from the queue, track and print level by level with level numbers, and recount expansions. What is the corrected expansion count for G -> B?"
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:21:05] PROMPT 7:
+"Now implement Q2(c) Bidirectional BFS alternating one full level forward, then one full level backward. Print both frontiers at each step, the meeting node, the full path (start -> meet -> goal), an edge-continuity check, and compare the total expansions with (b)."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:27:30] PROMPT 8:
+"For Q2(d), implement DLS with a cycle check against the current path for L = BFS depth - 1, L = BFS depth, and L = BFS depth + 2, and IDDFS reusing DLS. Then for Q2(e), build a comparison table of expansions for recursive DFS (no limit), BFS, and IDDFS on variant d=6, and write a 5-line analysis quoting our exact printed numbers."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:34:10] PROMPT 9:
+"For Q3 Unit III Knowledge Base, write the forward chaining engine with lowest-numbered rule firing strategy, print cycle logs for FS1 and FS2, create the why() explanation facility for allow_route_library and escort_to_medical, compare with fire-all strategy, build a truth-table evaluator for tautology and equivalence, and write FOL representations for R9, R10, R11."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:41:25] PROMPT 10 (RULE-BREAK CORRECTION 3):
+"For Q4(c), your TF-IDF computation used standard TfidfVectorizer default settings. The question specifically mandates:
+'stop_words=\"english\", smooth_idf=False, norm=None. Recompute the TF-IDF of \"timings\" in D4 in your own code using idf = ln(N/df) + 1, and match it against sklearn\'s value.'
+Fix this code to match smooth_idf=False and norm=None, show the manual math step-by-step matching sklearn, report D4 top-3 terms, vocabulary size, and explain why '8' and 'after' are absent."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:47:50] PROMPT 11:
+"For Q4(d), build the FAQ chatbot with TfidfVectorizer(stop_words='english') and cosine similarity. Set threshold tau = 0.20 + 0.05 * (d mod 4) = 0.30 for d=6. Ensure the bot handles all-zero query vectors and score ties within 0.01 by asking clarifying questions. Run queries q1 through q6. For Q4(e), score the 4 sentences with TextBlob and VADER, and discuss disagreements."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 11:54:15] PROMPT 12:
+"For Q5 Unit V Integrated CampusBot CLI, combine Q1-Q4 into campusbot(text, facts) with synonym mapping (gate, admin, canteen, library, hostel, lab, doctor/medical), BFS routing gated by KB verification and why() explanations, FAQ fallback, and test runs T1-T4 plus custom test T5."
+
+--------------------------------------------------------------------------------
+
+[2026-10-27 12:02:40] PROMPT 13:
+"Prepare complete answers and solutions for the Viva section: Live Modification cards M1 through M5 (with code adaptations and explanations) and technical questions 1 through 8 from the question bank."
+
+================================================================================
+END OF PROMPT LOG
+================================================================================
